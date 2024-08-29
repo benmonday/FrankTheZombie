@@ -1,5 +1,4 @@
 package com.ih8mondays57.FrankTheZombie.commands;
-import net.dv8tion.jda.api.events.Event;
 
 public class Help {
 
