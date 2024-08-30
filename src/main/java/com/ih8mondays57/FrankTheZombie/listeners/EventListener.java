@@ -52,6 +52,11 @@ public class EventListener extends ListenerAdapter {
                 imageFile = sholmes.returnSholmesImage();
                 event.getChannel().sendMessage(contentToSend).addFiles(FileUpload.fromData(imageFile)).queue();
                 break;
+            case "z!map":
+                Map map = new Map(messageSegmented[1]);
+                contentToSend = userAsAt + ", you should play " + map.returnMapName() + " in " + map.returnMapGame() + "!";
+                event.getChannel().sendMessage(contentToSend).queue();
+                break;
             default:
                 event.getChannel().sendMessage("```Command not recognized! Type z!commandlist for a full list of valid commands.```").queue();
         }
