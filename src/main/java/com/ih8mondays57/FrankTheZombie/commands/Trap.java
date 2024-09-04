@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.Random;
 
 public class Trap {
-    File directory = new File("src/main/resources/FrankTraps");
+    File directory = new File("FrankTraps");
     File image;
 
     public Trap() {

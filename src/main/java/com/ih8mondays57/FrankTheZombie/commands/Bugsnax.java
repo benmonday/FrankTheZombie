@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.Random;
 
 public class Bugsnax {
-    File directory = new File("src/main/resources/FrankBugsnax");
+    File directory = new File("FrankBugsnax");
     File image;
     String snackName;
 

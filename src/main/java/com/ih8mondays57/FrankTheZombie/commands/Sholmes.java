@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.Random;
 
 public class Sholmes {
-    File directory = new File("src/main/resources/FrankSholmes");
+    File directory = new File("FrankSholmes");
     File image;
 
     public Sholmes() {
