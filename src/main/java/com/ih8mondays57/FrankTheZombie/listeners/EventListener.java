@@ -57,6 +57,11 @@ public class EventListener extends ListenerAdapter {
                 contentToSend = userAsAt + ", you should play " + map.returnMapName() + " in " + map.returnMapGame() + "!";
                 event.getChannel().sendMessage(contentToSend).queue();
                 break;
+            case "z!isaac":
+                Isaac isaac = new Isaac();
+                contentToSend = isaac.returnIsaacMessage(userAsAt);
+                event.getChannel().sendMessage(contentToSend).queue();
+                break;
             default:
                 event.getChannel().sendMessage("```Command not recognized! Type z!commandlist for a full list of valid commands.```").queue();
         }
