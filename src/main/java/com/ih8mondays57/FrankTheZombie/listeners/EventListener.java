@@ -62,6 +62,27 @@ public class EventListener extends ListenerAdapter {
                 contentToSend = isaac.returnIsaacMessage(userAsAt);
                 event.getChannel().sendMessage(contentToSend).queue();
                 break;
+            case "z!beamsmasher":
+                int x;
+                int y;
+                int z;
+
+                if (messageSegmented.length != 4) {
+                    event.getChannel().sendMessage("Incorrect number of arguments. Please use format \"z!beamsmasher x y z\"").queue();
+                } else {
+                    try {
+                        x = Integer.parseInt(messageSegmented[1]);
+                        y = Integer.parseInt(messageSegmented[2]);
+                        z = Integer.parseInt(messageSegmented[3]);
+                    } catch (Error e) {
+                        event.getChannel().sendMessage("Could not parse integers. Please only use numbers.").queue();
+                        break;
+                    }
+                    Beamsmasher beamsmasher = new Beamsmasher(x, y, z);
+                    contentToSend = beamsmasher.returnBeamsmasherMessage(userAsAt);
+                    event.getChannel().sendMessage(contentToSend).queue();
+                }
+                break;
             default:
                 event.getChannel().sendMessage("```Command not recognized! Type z!commandlist for a full list of valid commands.```").queue();
         }

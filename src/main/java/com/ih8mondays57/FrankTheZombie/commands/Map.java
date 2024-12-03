@@ -29,7 +29,7 @@ public class Map {
     // VanGOATED maps
     String[] vgMaps = {"Der Anfang", "Terra Maledicta", "Shi No Numa", "The Archon"};
     // Black Ops 6 maps
-    String[] bo6Maps = {"Terminus", "Liberty Falls"};
+    String[] bo6Maps = {"Terminus", "Liberty Falls", "Citadelle Des Morts"};
 
     public Map (String game) {
         Random rand = new Random();

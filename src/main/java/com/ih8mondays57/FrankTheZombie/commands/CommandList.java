@@ -12,6 +12,7 @@ public class CommandList {
                 z!sholmes - Gives the user a random Sholmes image.
                 z!map <game> - Gives the user a random zombies map. Choices: waw, bo1, bo2, aw, bo3, iw, ww2, bo4, cw, vg, bo6, all.
                 z!isaac - Gives the user a character and path to take in a Binding of Isaac run.
+                z!beamsmasher - Enter the x, y, and z from your game to get the Beamsmasher code - no Peck required!
                 z!play <link> - Plays audio from a link in the voice channel.
                 z!stop - Stops playing the current audio track.```""";
     }
